@@ -1,0 +1,11 @@
+{
+  "name": "kseaatuva",
+  "version": "1.0.0",
+  "description": "Website for YG KSEA CVa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hyun Suk Ryoo",
+  "license": "ISC"
+}

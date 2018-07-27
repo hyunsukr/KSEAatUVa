@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="icon" href="/pics/logos/kseanobackgroun.jpg">
+    <title>KSEA at University of Virginia</title>
+    </head>
+    <style>
+        /*body {
+           background: #00ffff 0%;
+           background: linear-gradient(#00ffff 0%, #ccffcc 100%) fixed;
+         }*/
+        p.ex1 {
+            padding-bottom: 200px;
+        }
+        * {box-sizing: border-box;}
+        ul {list-style-type: none;}
+        body {font-family: Verdana, sans-serif;}
+
+        .month {
+            padding: 10px 10px;
+            width: 100%;
+            background: #000099;
+            text-align: center;
+        }
+
+        .month ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .month ul li {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .month .prev {
+            float: left;
+            padding-top: 10px;
+        }
+
+        .month .next {
+            float: right;
+            padding-top: 10px;
+        }
+
+        .weekdays {
+            margin: 0;
+            padding: 10px 0;
+            background-color: #ddd;
+        }
+
+        .weekdays li {
+            display: inline-block;
+            width: 13.6%;
+            color: #666;
+            text-align: center;
+        }
+
+        .days {
+            padding: 10px 0;
+            background: #eee;
+            margin: 0;
+        }
+
+        .days li {
+            list-style-type: none;
+            display: inline-block;
+            width: 13.6%;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size:12px;
+            color: #777;
+        }
+
+        .days li .active {
+            padding: 5px;
+            background: #FF8000;
+            color: white !important
+        }
+
+        /* Add media queries for smaller screens */
+        @media screen and (max-width:720px) {
+            .weekdays li, .days li {width: 13.1%;}
+        }
+
+        @media screen and (max-width: 420px) {
+            .weekdays li, .days li {width: 12.5%;}
+            .days li .active {padding: 2px;}
+        }
+
+        @media screen and (max-width: 290px) {
+            .weekdays li, .days li {width: 12.2%;}
+        }
+
+        /* Add a hover effect if you want */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        
+        #scrollToTopButton {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            background:linear-gradient(to right top, #ff8000, #ff8926, #ff923c, #ff9a4f, #ffa361);
+            padding: 0;
+            border: 0;
+            width: 60px;
+            height: 60px;
+            box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+            font-size: xx-large;
+            outline: 0;
+            visibility: hidden;
+            transform: scale(0);
+            opacity: 0;
+            transition: 0.2s;
+        }
+        #scrollToTopButton.show {
+            visibility: visible;
+            transform: scale(1);
+            opacity: 1;
+        }
+      
+    </style>
+     
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/paper/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+            var html, body, scrollToTopButton;
+            window.onload = function() {
+            html = document.documentElement;
+            body = document.body;
+            scrollToTopButton = document.getElementById("scrollToTopButton");
+            };
+    
+            function scrollToTop(totalTime, easingPower) {
+            //console.log("here");
+            var timeInterval = 1; //in ms
+            var scrollTop = Math.round(body.scrollTop || html.scrollTop);
+            //var by=- scrollTop;
+            var timeLeft = totalTime;
+            var scrollByPixel = setInterval(function() {
+                var percentSpent = (totalTime - timeLeft) / totalTime;
+                if (timeLeft >= 0) {
+                var newScrollTop = scrollTop * (1 - easeInOut(percentSpent, easingPower));
+                body.scrollTop = newScrollTop;
+                html.scrollTop = newScrollTop;
+                //console.log(easeInOut(percentSpent,easingPower));
+                timeLeft--;
+                } else {
+                clearInterval(scrollByPixel);
+                //Add hash to the url after scrolling
+                //window.location.hash = hash;
+                }
+            }, timeInterval);
+            }
+    
+            function easeInOut(t, power) {
+                if (t < 0.5) {
+                    return 0.5 * Math.pow(2 * t, power);
+                } else {
+                    return 0.5 * (2 - Math.pow(2 * (1 - t), power));
+                }
+            }
+    
+            window.onscroll = controlScrollToTopButton;
+    
+            function controlScrollToTopButton() {
+            var windowInnerHeight = 0.3 * window.innerHeight;
+                if (
+                    body.scrollTop > windowInnerHeight ||
+                    html.scrollTop > windowInnerHeight
+                ) {
+                    scrollToTopButton.classList.add("show");
+                } else {
+                    scrollToTopButton.classList.remove("show");
+                }
+            }
+    
+            </script>
+
+    <body>
+        <button id="scrollToTopButton" onclick="scrollToTop(300,3);"><i class="fa fa-arrow-up" style="padding:0px;color:bg-dark"></i></button>
+        <div class="container-fluid" style="padding: 0px !important;">
+            <nav style="background-image:url('https://news.virginia.edu/sites/default/files/article_image/rotunda_night_summer_17_ss_header_5-2.jpg'); background-size:cover; height: 475px; padding:5px; background-color:#000080; font-size:60px; color:#ffffff; text-align:center; font-weight:bold; font-variant:small-caps; border-bottom:5px #FF8000 solid;">
+                <p style= "padding-bottom:50px;"></p> KSEA </br> University of Virginia
+            </nav>
+              <!--</br><div class="container">-->
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark" style="display:flex! important;">
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                    <ul class="navbar-nav mr-auto">
+                        <li class = "nav-item">
+                            <a class="navbar-brand" href="http://www.ksea.org/">
+                                <img src="/pics/logos/kseanobackgroun.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a class="navbar-brand" href="http://www.virginia.edu">
+                                <img src="/pics/logos/uvarotunda.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/"><span style="font-size:125%;">Home</a></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about"><span style="font-size:125%;">About</a></span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/execundergraduate"><span style="font-size:125%;">Executive Board</a></span>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span style="font-size:125%;">
+                            Events</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/socialeventsunder">Social</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/techeventsunder">Tech</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-auto order-0" style="display:inline-block">
+                    <a class="navbar-brand mx-auto" href="#"><span style="font-size:125%;">YG KSEA</span></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2" style="vertical-align: 50% ;display:none !important">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" style="display:flex! important">
+                    <ul class="navbar-nav ml-auto" >
+                        <li class="nav-item">
+                            <a class="nav-link" href="/homegraduate"><span style="font-size:125%">Graduate</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/homeundergraduate"><span style="font-size:125%;">Undergraduate</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/kconnect"><span style="font-size:125%;">Get Connected!</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+          <div class="container">
+          
