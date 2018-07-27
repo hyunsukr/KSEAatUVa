@@ -1224,12 +1224,12 @@ http.createServer(function (req, res) {
                 var transporter = nodemailer.createTransport({
                     service: 'gmail',
                     auth: {
-                      user: 'hyunsukr@gmail.com',
-                      pass: 'Q7!@audi'
+                      user: 'kseayguva@gmail.com',
+                      pass: 'avugyyaesk'
                     }
                   });
                   var mailOptions = {
-                    from: 'hyunsukr@gmail.com',
+                    from: 'kseayguva@gmail.com',
                     to: "hr2ee@virginia.edu,",
                     subject: 'KSEA EVENT UPLOAD REQUEST (tech)',
                     text: 'Title: ' + title + '  description: ' + description + '  who: ' + who + '  what: ' + what + '  when: ' + when + '  where: ' + where + '  purpose: ' + purpose
@@ -1281,12 +1281,12 @@ http.createServer(function (req, res) {
                 var transporter = nodemailer.createTransport({
                   service: 'gmail',
                   auth: {
-                    user: 'hyunsukr@gmail.com',
-                    pass: 'Q7!@audi'
+                    user: 'kseayguva@gmail.com',
+                    pass: 'avugyaesk'
                   }
                 });
                 var mailOptions = {
-                  from: 'hyunsukr@gmail.com',
+                  from: 'kseayguva@gmail.com',
                   to: "hr2ee@virginia.edu,",
                   subject: 'KSEA EVENT UPLOAD REQUEST pic tech',
                   text: 'sending corresponding pic',
@@ -1610,12 +1610,12 @@ http.createServer(function (req, res) {
                 var transporter = nodemailer.createTransport({
                     service: 'gmail',
                     auth: {
-                      user: 'hyunsukr@gmail.com',
-                      pass: 'Q7!@audi'
+                      user: 'kseayguva@gmail.com',
+                      pass: 'avugyaesk'
                     }
                   });
                   var mailOptions = {
-                    from: 'hyunsukr@gmail.com',
+                    from: 'kseayguva@gmail.com',
                     to: "hr2ee@virginia.edu,",
                     subject: 'KSEA EVENT UPLOAD REQUEST',
                     text: 'Title: ' + title + '  description: ' + description + '  who: ' + who + '  what: ' + what + '  when: ' + when + '  where: ' + where + '  purpose: ' + purpose
@@ -1667,12 +1667,12 @@ http.createServer(function (req, res) {
                 var transporter = nodemailer.createTransport({
                   service: 'gmail',
                   auth: {
-                    user: 'hyunsukr@gmail.com',
-                    pass: 'Q7!@audi'
+                    user: 'kseaygauva@gmail.com',
+                    pass: 'avugyaesk'
                   }
                 });
                 var mailOptions = {
-                  from: 'hyunsukr@gmail.com',
+                  from: 'kseayguva@gmail.com',
                   to: "hr2ee@virginia.edu,",
                   subject: 'KSEA EVENT UPLOAD REQUEST pic',
                   text: 'sending corresponding pic',
