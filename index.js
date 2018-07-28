@@ -1222,7 +1222,7 @@ http.createServer(function (req, res) {
                 var where = body.split('where=')[1].split('&purpose')[0];
                 var purpose = body.split('purpose=')[1];
                 var transporter = nodemailer.createTransport({
-                    service: 'gmail',
+                    service: 'Gmail',
                     auth: {
                       user: 'kseayguva@gmail.com',
                       pass: 'avugyaesk'
@@ -1279,7 +1279,7 @@ http.createServer(function (req, res) {
                     res.end();
                 });
                 var transporter = nodemailer.createTransport({
-                  service: 'gmail',
+                  service: 'Gmail',
                   auth: {
                     user: 'kseayguva@gmail.com',
                     pass: 'avugyaesk'
@@ -1608,7 +1608,7 @@ http.createServer(function (req, res) {
                 var where = body.split('where=')[1].split('&purpose')[0];
                 var purpose = body.split('purpose=')[1];
                 var transporter = nodemailer.createTransport({
-                    service: 'gmail',
+                    service: 'Gmail',
                     auth: {
                       user: 'kseayguva@gmail.com',
                       pass: 'avugyaesk'
@@ -1665,7 +1665,7 @@ http.createServer(function (req, res) {
                     res.end();
                 });
                 var transporter = nodemailer.createTransport({
-                  service: 'gmail',
+                  service: 'Gmail',
                   auth: {
                     user: 'kseayguva@gmail.com',
                     pass: 'avugyaesk'
