@@ -1225,7 +1225,7 @@ http.createServer(function (req, res) {
                     service: 'gmail',
                     auth: {
                       user: 'kseayguva@gmail.com',
-                      pass: 'avugyyaesk'
+                      pass: 'avugyaesk'
                     }
                   });
                   var mailOptions = {
