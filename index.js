@@ -1667,7 +1667,7 @@ http.createServer(function (req, res) {
                 var transporter = nodemailer.createTransport({
                   service: 'gmail',
                   auth: {
-                    user: 'kseaygauva@gmail.com',
+                    user: 'kseayguva@gmail.com',
                     pass: 'avugyaesk'
                   }
                 });
