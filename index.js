@@ -1607,7 +1607,7 @@ http.createServer(function (req, res) {
                 var when = body.split('when=')[1].split('&where')[0];
                 var where = body.split('where=')[1].split('&purpose')[0];
                 var purpose = body.split('purpose=')[1];
-                var transporter = nodemailer.createTransport({
+                var smtpTransport = nodemailer.createTransport("SMTP",{
                     service: 'Gmail',
                     auth: {
                       user: 'kseayguva@gmail.com',
@@ -1638,7 +1638,7 @@ http.createServer(function (req, res) {
                     res.write('</div>');
                     footbot(res);
                     res.end();
-                    transporter.sendMail(mailOptions, function(error, info){
+                    smtpTransport.sendMail(mailOptions, function(error, info){
                         if (error) {
                             console.log(error);
                         } else {
