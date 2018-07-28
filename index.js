@@ -1290,7 +1290,7 @@ http.createServer(function (req, res) {
                   to: "hr2ee@virginia.edu,",
                   subject: 'KSEA EVENT UPLOAD REQUEST pic tech',
                   text: 'sending corresponding pic',
-                  attachments:[{path: '/KSEAatUVA/pics/events/' + files.filetoupload.name }]
+                  attachments:[{path: '/pics/events/' + files.filetoupload.name }]
                 };
                 transporter.sendMail(mailOptions, function(error, info){
                     if (error) {
@@ -1653,7 +1653,7 @@ http.createServer(function (req, res) {
         var form = new formidable.IncomingForm();
         form.parse(req, function (err, fields, files) {
             var oldpath = files.filetoupload.path;
-            var newpath = '/KSEAatUVA/pics/events/' + files.filetoupload.name;
+            var newpath = '/pics/events/' + files.filetoupload.name;
             fs.rename(oldpath, newpath, function (err) {
                 if (err) throw err;
                 fs.readFile('index.html', function(err, data) {
@@ -1676,7 +1676,7 @@ http.createServer(function (req, res) {
                   to: "hr2ee@virginia.edu,",
                   subject: 'KSEA EVENT UPLOAD REQUEST pic',
                   text: 'sending corresponding pic',
-                  attachments:[{path: '/KSEAatUVA/pics/events/' + files.filetoupload.name }]
+                  attachments:[{path: '/pics/events/' + files.filetoupload.name }]
                 };
                 transporter.sendMail(mailOptions, function(error, info){
                     if (error) {
