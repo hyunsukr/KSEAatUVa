@@ -1104,6 +1104,7 @@ http.createServer(function (req, res) {
             res.write('</br><button type="submit" value="Submit" class="btn btn-primary">Submit</button></form>');
             res.write('<form action="/techeventsunder" method="post"></br><button type="submit" id="newuser" class="btn btn-primary" style="color:#ffffff; ">Go back to tech events </button></form>');
             res.write("</br>");
+            res.write("</br>");
             res.write('</div>');
             footbot(res);
             res.end();
@@ -1489,6 +1490,7 @@ http.createServer(function (req, res) {
             res.write('</br><button type="submit" value="Submit" class="btn btn-primary">Submit</button></form>');
             res.write('<form action="/socialeventsunder" method="post"></br><button type="submit" id="newuser" class="btn btn-primary" style="color:#ffffff; ">Go back to social events </button></form>');
             res.write("</br>");
+            res.write('</br>');
             res.write('</div>');
             footbot(res);
             res.end();
@@ -1750,7 +1752,7 @@ http.createServer(function (req, res) {
 function footbot (res) {
     res.write('<div class="page-footer font-small blue  small text-light bg-dark" role = "contentinfo" style="width:100%; bottom: 0; padding-top: 1em; padding-bottom: 1em">');
     res.write('  <div class="container" style = "text-align:center">');
-    res.write('&copy; KSEA at University of Virginia');
+    res.write('&copy; KSEA at University of Virginia</br>Central Virginia Chapter');
     res.write('</br> Email: <a href="mailto:kseayguva@gmail.com">kseayguva@gmail.com</a></br>')
     res.write('  </div>');
     res.write('</div>');
