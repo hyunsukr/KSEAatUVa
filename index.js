@@ -452,7 +452,7 @@ http.createServer(function (req, res) {
           res.write('<tr><td><span class="pull-left"><img src="/pics/profile/byungkyupark.jpg" class="rounded float-left" style="width:200px;height:200px;"alt=""></span></td>');
           res.write('<td><strong>Byungkyu Park (Brian) </strong></br> President/Advisor for KSEA Central Virginia Chapter </br> Associate Professor in Civil & Environmental Engineering </br> Phonenumber: 434-260-0101 </br> Email: <a href="mailto:bp6v@virginia.edu">bp6v@virginia.edu</a></td></tr>');
 
-          res.write('<tr><td><span class="pull-left"><img src="/pics/logos/rotunda.jpg" class="rounded float-left" style="width:200px;height:200px;"alt=""></span></td>');
+          res.write('<tr><td><span class="pull-left"><img src="/pics/logos/uvarotunda.png" class="rounded float-left" style="width:200px;height:200px;"alt=""></span></td>');
           res.write('<td><strong>Seunghan Ryu (Francis) </strong></br> Tresurer for KSEA Central Virginia Chapter </br>President for Korean Graduate Student Association </br> Phonenumber: 434-249-8384 </br> Email: <a href="mailto:sr5ae@virginia.edu">sr5ae@virginia.edu</a></td></tr>');
 
           res.write('<tr><td></br></br><strong><span style="font-size:150%">YG KSEA</span></strong></td><td></td></tr>')
