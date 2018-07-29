@@ -22,7 +22,7 @@
         
         .bg {
             /* The image used */
-            background-image: url("pics/logos/rotunda.jpg");
+            background-image: url("pics/logos/homepage.jpg");
             
             /* Full height */
             height: 100%; 
@@ -36,9 +36,28 @@
   text-align: center;
   display: inline-block;
   position: absolute;
-  top: 50%;
-  left: 33%;
+  top: 60%;
+  left: 36%;
 }
+.blur {
+    -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+.wrapper2 {
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 37%;
+  color:#fff;
+  font-size:225%;
+  font-family: Arial, Helvetica, sans-serif;
+  height:350px;
+}
+
 
 .button {
     position: absolute;
@@ -90,7 +109,7 @@ section {
     border-radius: 10px;
     box-shadow:0 1px 1px #fff;
     transition: .4s;
-    width:250px;
+    width:200px;
     height: 50px;
     margin: auto;
     text-align: center;
@@ -108,7 +127,7 @@ section {
 <body>
         <div class="bg" style="opacity: 1.0">
 <nav class="navbar transparent navbar-expand-md navbar-fixed-top navbar-dark"data-spy="affix" style="background:none">
-    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 hover">
         <ul class="navbar-nav mr-auto">
                 <li class = "nav-item">
                         <a class="navbar-brand" href="http://www.ksea.org/">
@@ -148,14 +167,13 @@ section {
         </ul>
     </div>
 </nav>
-
+<div class="wrapper2">
+    <strong>KSEA</br>University of Virginia</strong>
+</div>
 <div class="wrapper">
      <a href="/homeundergraduate" style="text-decoration: none !important;" class="square_btn">Undergraduate</a>
      <a href="/homegraduate" style="text-decoration: none !important;" class="square_btn">Graduate</a>
-
-    
-        </div>
-
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

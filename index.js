@@ -330,7 +330,7 @@ http.createServer(function (req, res) {
             res.write('</td>');
             res.write('</tr>');
 
-            res.write('<td><a href="http://www.kccic.org/"><span class="pull-left"><img src="/pics/logos/kcciclogo.png" class="rounded float-right" style="width:200px;height:200px;"alt=""></span></a></td>');
+            res.write('<td><a href="https://www.facebook.com/groups/kcciccollegegroup/"><span class="pull-left"><img src="/pics/logos/kcciclogo.png" class="rounded float-right" style="width:200px;height:200px;"alt=""></span></a></td>');
             res.write('<td><span class: "pull-left" style="text-align:left"><strong>H.I.M (HERE I AM)</strong> </br>Korean Community Church in Charlottesville (KCCIC) </br>Website link: <a href="http://www.kccic.org/">http://www.kccic.org/ </a></br> Email: <a href="mailto:kccicmail@gmail.com">kccicmail@gmail.com</a> </br> President: Dasam Jeong (<a href="mailto:dj2vp@virginia.edu">dj2vp@virginia.edu</a>)</br>');
             res.write('<a href="https://www.facebook.com/groups/kcciccollegegroup/"><i class="fa fa-facebook-square" style="font-size:48px;padding:0px;color:#3B5998"></i></a>')
             res.write('</td>');
@@ -1143,6 +1143,7 @@ http.createServer(function (req, res) {
                     fs.readFile('index.html', function(err, data) {
                         res.writeHead(200, {'Content-Type': 'text/html'});
                         res.write(data);
+                        res.write('Please fill out the information below!</br>');
                         res.write('<form name="makenewpost" method="post" action="/sendmailundertech" >');
                         res.write('Title: <input type="text" class="form-control" name = "title" id="title" placeholder="Title" required="required">');
                         res.write('Description: <input type="text" class="form-control" name = "description" id="description" placeholder="Description" required= "required">');
@@ -1530,7 +1531,7 @@ http.createServer(function (req, res) {
                         res.writeHead(200, {'Content-Type': 'text/html'});
                         res.write(data);
                         res.write('<form name="makenewpost" method="post" action="/sendmailunder" >');
-                        res.write('</br> If this is an internship offer please email the internship directly to President!')
+                        res.write('</br> If this is an internship offer please email the internship directly to President!</br>')
                         res.write('Title: <input type="text" class="form-control" name = "title" id="title" placeholder="Title" required="required">');
                         res.write('Description: <input type="text" class="form-control" name = "description" id="description" placeholder="Description" required= "required">');
                         res.write('Who: <input type="text" class="form-control" name = "who" id="who" placeholder="Who" required="required">');
