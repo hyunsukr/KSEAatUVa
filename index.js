@@ -1234,7 +1234,7 @@ http.createServer(function (req, res) {
                     from: 'kseayguva@gmail.com',
                     to: "hr2ee@virginia.edu,",
                     subject: 'KSEA EVENT UPLOAD REQUEST (tech)',
-                    text: 'Title: ' + title + '  description: ' + description + '  who: ' + who + '  what: ' + what + '  when: ' + when + '  where: ' + where + '  purpose: ' + purpose
+                    text: 'Title: ' + unescape(title) + '  description: ' + unescape(description) + '  who: ' + unescape(who) + '  what: ' + unescape(what) + '  when: ' + unescape(when) + '  where: ' + unescape(where) + '  purpose: ' + unescape(purpose)
                   };
                 fs.readFile('index.html', function(err, data) {
                     res.writeHead(200, {'Content-Type': 'text/html'});
@@ -1621,7 +1621,7 @@ http.createServer(function (req, res) {
                     from: 'kseayguva@gmail.com',
                     to: "hr2ee@virginia.edu,",
                     subject: 'KSEA EVENT UPLOAD REQUEST',
-                    text: 'Title: ' + title + '  description: ' + description + '  who: ' + who + '  what: ' + what + '  when: ' + when + '  where: ' + where + '  purpose: ' + purpose
+                    text: 'Title: ' + unescape(title) + '  description: ' + unescape(description) + '  who: ' + unescape(who) + '  what: ' + unescape(what) + '  when: ' + unescape(when) + '  where: ' + unescape(where) + '  purpose: ' + unescape(purpose)
                   };
                 fs.readFile('index.html', function(err, data) {
                     res.writeHead(200, {'Content-Type': 'text/html'});
