@@ -323,7 +323,7 @@ http.createServer(function (req, res) {
             res.write('</tr>');
 
             res.write('<td><a href="https://www.facebook.com/groups/2200074782/"><span class="pull-left"><img src="/pics/logos/ksalogo.png" class="rounded float-right" style="width:200px;height:200px;"alt=""></span></a></td>');
-            res.write('<td><span class: "pull-left" style="text-align:left"><strong>Korean Student Association (KSA at UVA)</strong> </br>Website link: N/A </br> Email: <a href="mailto:lkc9dw@virginia.edu">lkc9dw@virginia.edu</a> </br>');
+            res.write('<td><span class: "pull-left" style="text-align:left"><strong>Korean Student Association (KSA at UVA)</strong> </br>Website link: N/A </br> Email: <a href="mailto:lkc9dw@virginia.edu">lkc9dw@virginia.edu</a> </br> President: Steve Hong (<a href="mailto:gsy2be@virginia.edu">gsy2be@virginia.edu</a>)');
             res.write('<a href="https://www.facebook.com/groups/2200074782/"><i class="fa fa-facebook-square" style="font-size:48px;padding-right:10px;color:#3B5998"></i></a>');
             res.write('<a href="https://twitter.com/ksa_uva?lang=en"><i class="fa fa-twitter-square" style="font-size:48px;padding:0px;padding-right:10px;color:#1DA1F2"></i></a>');
             res.write('<a href="https://www.youtube.com/channel/UCCrULtpfBAm2Mdq6qPHyGFQ"><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a>');
@@ -337,8 +337,8 @@ http.createServer(function (req, res) {
             res.write('</tr>');
 
             res.write('<td><a href="https://www.refugeerescues.org/"><span class="pull-left"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/LiNK_Logo.png" class="rounded float-right" style="width:200px;height:200px;"alt=""></span></a></td>');
-            res.write('<td><span class: "pull-left" style="text-align:left"><strong>Liberty in North Korea at UVa (LiNK at UVa) </strong> </br>Website link: <a href="https://www.refugeerescues.org/">https://www.refugeerescues.org/</a></br> Email: <a href="mailto:gsy2be@virginia.edu">gsy2be@virginia.edu</a> </br>');
-            res.write('<a href="https://www.facebook.com/LiNKatUVA/"><i class="fa fa-facebook-square" style="font-size:48px;padding:0px;padding-right:10px;color:#3B5998"></i></a>')
+            res.write('<td><span class: "pull-left" style="text-align:left"><strong>Liberty in North Korea at UVa (LiNK at UVa) </strong> </br>Website link: <a href="https://www.refugeerescues.org/">https://www.refugeerescues.org/</a></br> Email: <a href="mailto:gsy2be@virginia.edu">gsy2be@virginia.edu</a> </br> President: Grace Yi (<a href="mailto:gsy2be@virginia.edu">gsy2be@virginia.edu</a>)</br>');
+            res.write('<a href="https://www.facebook.com/LiNKatUVA/"><i class="fa fa-facebook-square" style="font-size:48px;padding:0px;padding-right:10px;color:#3B5998"></i></a>');
             res.write('<a href="https://twitter.com/LibertyinNK/"><i class="fa fa-twitter-square" style="font-size:48px;padding-right:10px;color:#1DA1F2"></i></a>');
             res.write('<a href="https://www.instagram.com/libertyinnorthkorea/?hl=en"><i class="fa fa-instagram" style="font-size:48px;padding:0px;background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;"></i></a>')
             res.write('</td>');
