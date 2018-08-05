@@ -323,7 +323,7 @@ http.createServer(function (req, res) {
             res.write('</tr>');
 
             res.write('<td><a href="https://www.facebook.com/groups/2200074782/"><span class="pull-left"><img src="/pics/logos/ksalogo.png" class="rounded float-right" style="width:200px;height:200px;"alt=""></span></a></td>');
-            res.write('<td><span class: "pull-left" style="text-align:left"><strong>Korean Student Association (KSA at UVA)</strong> </br>Website link: N/A </br> Email: <a href="mailto:lkc9dw@virginia.edu">lkc9dw@virginia.edu</a> </br> President: Steve Hong (<a href="mailto:gsy2be@virginia.edu">gsy2be@virginia.edu</a>)</br>');
+            res.write('<td><span class: "pull-left" style="text-align:left"><strong>Korean Student Association (KSA at UVA)</strong> </br>Website link: N/A </br> Email: <a href="mailto:lkc9dw@virginia.edu">lkc9dw@virginia.edu</a> </br> President: Steve Hong (<a href="mailto:sjh5mt@virginia.edu">sjh5mt@virginia.edu</a>)</br>');
             res.write('<a href="https://www.facebook.com/groups/2200074782/"><i class="fa fa-facebook-square" style="font-size:48px;padding-right:10px;color:#3B5998"></i></a>');
             res.write('<a href="https://twitter.com/ksa_uva?lang=en"><i class="fa fa-twitter-square" style="font-size:48px;padding:0px;padding-right:10px;color:#1DA1F2"></i></a>');
             res.write('<a href="https://www.youtube.com/channel/UCCrULtpfBAm2Mdq6qPHyGFQ"><i class="fa fa-youtube-play" style="font-size:48px;color:red"></i></a>');
