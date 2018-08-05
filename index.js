@@ -316,7 +316,7 @@ http.createServer(function (req, res) {
 
             res.write('<tr>');
             res.write('<td><a href="/"><span class="pull-left"><img src="/pics/logos/ksealogoblack.png" class="rounded float-right" style="width:200px;height:200px;"alt=""></span></a></td>');
-            res.write('<td><span class: "pull-left" style="text-align:left"><strong>Korean-American Scientists and Engineers Association (KSEA at UVA) </strong></br> Website link: <a href="http://www.kseauva.org">http://www.kseauva.org/ </a></br> Email: <a href="mailto:kseayguva@gmail.com">kseayguva@gmail.com</a></br> President: Jeongsu Park (<a href="mailto:jp6kc@virginia.edu">jp6kc@virginia.edu</a>)</br>');
+            res.write('<td><span class: "pull-left" style="text-align:left"><strong>Korean-American Scientists and Engineers Association (KSEA at UVA) </strong></br> Website link: <a href="http://www.uva-ksea.org">http://www.kseauva.org/ </a></br> Email: <a href="mailto:kseayguva@gmail.com">kseayguva@gmail.com</a></br> President: Jeongsu Park (<a href="mailto:jp6kc@virginia.edu">jp6kc@virginia.edu</a>)</br>');
             res.write('<span class: "pull-left" style="text-align:left"><a href="https://www.facebook.com/groups/kseaAtUva/about/"><i class="fa fa-facebook-square" style="font-size:48px;color:#3B5998;padding-right:10px"></i></a></span>');
             res.write('<a href="https://www.facebook.com/groups/kseaAtUva/about/"><i class="fa fa-twitter-square" style="font-size:48px;padding-right:10px;color:#1DA1F2"></i></a>');
             res.write('</td>');
