@@ -116,8 +116,8 @@ http.createServer(function (req, res) {
             res.write('<tbody>');
 
             res.write('<tr>');
-            res.write('<td><a href="/fasco"><span class="pull-left"><img src="/pics/events/Fasco_Global_Internship_small.jpg" class="rounded float-right" style="width:300px;height:200px;"alt=""></span></a></td>');
-            res.write('<td><span class: "pull-left" style="text-align:left"><strong>Fasco Internship</strong></br>');
+            res.write('<td><a href="/fasoo"><span class="pull-left"><img src="/pics/events/Fasco_Global_Internship_small.jpg" class="rounded float-right" style="width:300px;height:200px;"alt=""></span></a></td>');
+            res.write('<td><span class: "pull-left" style="text-align:left"><strong>Fasoo Internship</strong></br>');
             res.write('</br>Internship offer for Software Engineering and Marketing Strategies! </br>');
             res.write('</br> Click on picture for more details');
             res.write('</td>');
@@ -143,12 +143,12 @@ http.createServer(function (req, res) {
             res.end();
         });
     }          
-    else if (req.url == '/fasco') {
+    else if (req.url == '/fasoo') {
         fs.readFile('index.html', function(err, data) {
             res.writeHead(200, {'Content-Type': 'text/html'});
             res.write(data);
             res.write('<h3 class="fl-heading" style="text-align:left">');
-            res.write('<span style="text-align:left;color:#000099">Fasco Internship</span>');
+            res.write('<span style="text-align:left;color:#000099">Fasoo Internship</span>');
             res.write('</h3>');
             res.write('<hr style = "height:1px;border-color:#000000; " >');
             res.write('<p style="text-align:center"><img src="/pics/events/Fasco_Global_Internship.jpg" align="middle" width="880" height="1300"></p></br>');
