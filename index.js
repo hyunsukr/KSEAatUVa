@@ -473,7 +473,7 @@ http.createServer(function (req, res) {
           res.write('<td><strong>Sujin Park </strong></br> Secretary </br> B.A. Computer Science & B.A. Studio Art</br> Phonenumber: 757-848-3446 </br> Email: <a href="mailto:sjp7yf@virginia.edu">sjp7yf@virginia.edu</a> </td></tr>');
           
           res.write('<tr><td class="align-right"><span class="pull-left"><img src="/pics/profile/jinijeon.jpg" class="rounded float-left" style="width:200px;height:200px;"alt=""></span></td>');
-          res.write('<td><strong>Jini Jeon </strong></br> Treasure </br> B.A. Biology & Minor in Religious Studies </br> Phonenumber: 571-529-0578 </br> Email: <a href="mailto:jj7wt@virginia.edu">jj7wt@virginia.edu</a> </td></tr>');
+          res.write('<td><strong>Jini Jeon </strong></br> Treasurer </br> B.A. Biology & Minor in Religious Studies </br> Phonenumber: 571-529-0578 </br> Email: <a href="mailto:jj7wt@virginia.edu">jj7wt@virginia.edu</a> </td></tr>');
           
           res.write('<tr><td class="align-right"><span class="pull-left"><img src="/pics/profile/jungyunjang.jpg" class="rounded float-left" style="width:200px;height:200px;"alt=""></span></td>');
           res.write('<td> <strong>Jungyun Jang (Jenny) </strong></br> Public Relations/Event Cordinator </br> B.A. Biology </br> Phonenumber: 703-675-4342 </br> Email: <a href="mailto:jj6jz@virginia.edu">jj6jz@virginia.edu</a> </td></tr>');
