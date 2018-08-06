@@ -242,7 +242,7 @@ http.createServer(function (req, res) {
             res.write('<li>Essay</li>');
             res.write('</ol>');
             res.write('</ul>');
-            res.write('Please check out the official page to apply here :<a href="/http://scholarship.ksea.org/InfoUndergraduate.aspx" style="color:#FF0000"> KSEA UNDERGRADUATE SCHOLARSHIPS</a>')
+            res.write('Please check out the official page to apply here :<a href="http://scholarship.ksea.org/InfoUndergraduate.aspx" style="color:#FF0000"> KSEA UNDERGRADUATE SCHOLARSHIPS</a>')
             res.write('<hr style = "height:1px;border-color:#000000; " >');
             res.write('<h3 class="fl-heading" style="text-align:center">');
             res.write('<span style="text-align:center;color:#000099">Other Scholarships</span>');
